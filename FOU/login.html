@@ -6,16 +6,27 @@
     <link rel="icon" href="media/favico.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="cssfiles/loginStyle.css">
   </head>
-  <body>
+  <body class="body">
       <div class="grid-container">
-        <div class="header"><img class="image" src="media/titlulogo.png"></div>
-        <div class="login"></div>
-        <div class="description"></div>
+        <div class="header"><a href="login.html"><img class="image" src="media/titlu-logo.png"></a></div>
+        <div class="description">
+          <p class="titlu"> Pentru ce "File Online Uploader"?</p>
+          <p>Acest site are ca scop stocarea fișierelor într-o bază de date On-Line și păstrarea lor ordonată pe foldere.
+        </div>
+        <div class="login">
+            <br>
+            Username:<br>
+            <input type="text" name="FirstName" value="username"><br>
+            Password:<br>
+            <input type="password" name="LastName" value="password"><br><a href="/resetpassword.html">Ups! Am uitat parola.</a><br><br>
+            <button class="button buttonlogin" onclick="window.location.href='home.html'">Login</button>
+            <br><br><br>
+            <p>Nu ai cont? <a href="register.html">Înregistrează-te.</a>
+        </div>
         <div class="left-part"></div>
         <div class="right-part"></div>
         <div class="foooter-part"></div>
       </div>
-
     </div>
   </body>
 </html>
