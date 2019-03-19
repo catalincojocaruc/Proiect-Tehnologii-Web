@@ -1,9 +1,8 @@
-.grid-container
-{
+.grid-container {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
-  grid-template-areas: ". header header ." ". description login ." ". . . .";
+  grid-template-areas: ". header header ." ". register register ." ". . . .";
   width: 100%;
   height: 100%;
   position: relative;
@@ -20,6 +19,7 @@
   grid-area: header;
   align-content: center;
 }
+
 .body
 {
   font-family: Verdana;
@@ -29,36 +29,15 @@
   align-content: center;
 }
 
-.description
-{
-  grid-area: description;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border-radius: 10px;
-  border: solid;
-  border-color:white;
-  border-width: 5px;
-  text-align: center;
-  color: rgb(0,122,178);
-  position: relative;
-  right: 5%;
-}
+.left-part { grid-area: left-part; }
 
-input
-{
-  border-radius: 8px;
-}
+.right-part { grid-area: right-part; }
 
-button
-{
-  border-radius: 8px;
-}
+.footer { grid-area: footer; }
 
-.login
+.register
 {
-  grid-area: login;
+  grid-area: register;
   border-radius: 10px;
   border: solid;
   border-color:rgb(0,122,178);
@@ -68,33 +47,6 @@ button
   width: 100%;
   height: 100%;
   color: white;
-  position: relative;
-  left: 5%;
-}
-
-.left-part
-{
-  grid-area: left-part;
-}
-
-.right-part
-{
-  grid-area: right-part;
-}
-
-.foooter-part
-{
-  grid-area: foooter-part;
-}
-
-.image
-{
-  width: 100%;
-}
-
-.titlu
-{
-  font-size: 25px
 }
 
 .button
@@ -123,4 +75,19 @@ button
 {
   background-color: #004666;
   color: white;
+}
+
+.image
+{
+  width: 100%;
+}
+
+input
+{
+  border-radius: 8px;
+}
+
+button
+{
+  border-radius: 8px;
 }
