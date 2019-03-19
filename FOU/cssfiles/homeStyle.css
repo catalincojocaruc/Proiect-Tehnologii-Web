@@ -1,0 +1,163 @@
+img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
+  grid-template-rows: 0.3fr 2.5fr 0.2fr;
+  grid-template-areas: "header header header header" "navBar main main main" "footer footer footer footer";
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 0.4fr 1.7fr 0.9fr;
+  grid-template-rows: 1.1fr 0.9fr;
+  grid-template-areas: "titluLogo titluLogo user" "titluLogo titluLogo user";
+  grid-area: header;
+  background-color: #002333;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "numeUser avatar" "numeUser avatar";
+  grid-area: user;
+}
+
+.avatar {
+  position: relative;
+  right: 10%;
+  grid-area: avatar;
+  }
+
+.numeUser {
+  position: relative;
+  grid-area: numeUser;
+  color: white;
+  font-family: sans-serif;
+}
+
+.titluLogo {
+  grid-area: titluLogo; }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". language ." ". socialMedia .";
+  grid-area: footer;
+}
+
+.language { grid-area: language; }
+
+.socialMedia {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . .";
+  grid-area: socialMedia;
+}
+
+.navBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.4fr 0.4fr 0.4fr 0.4fr 4.1fr;
+  grid-template-areas: "search search search" "upload upload upload" "recent recent recent" "favorite favorite favorite" "yourFiles yourFiles yourFiles" ". . .";
+  grid-area: navBar;
+}
+
+.search { grid-area: search; }
+
+.upload {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "icon text";
+  grid-area: upload;
+}
+
+.icon { grid-area: icon; }
+
+.text { grid-area: text; }
+
+.recent {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "iconRecent textRecent";
+  grid-area: recent;
+}
+
+.textRecent { grid-area: textRecent; }
+
+.iconRecent { grid-area: iconRecent; }
+
+.favorite {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "favIcon textFav";
+  grid-area: favorite;
+}
+
+.favIcon { grid-area: favIcon; }
+
+.textFav { grid-area: textFav; }
+
+.yourFiles {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "iconFiles tetFiles";
+  grid-area: yourFiles;
+}
+
+.iconFiles { grid-area: iconFiles; }
+
+.tetFiles { grid-area: tetFiles; }
+
+.main {
+  display: grid;
+  grid-template-columns: 0.4fr 2.3fr 0.3fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  grid-template-areas: ". titluMain ." ". listFisiere .";
+  grid-area: main;
+}
+
+.titluMain { grid-area: titluMain; }
+
+.listFisiere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.9fr 1.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "fisier1 fisier1 fisier1" "fisier2 fisier2 fisier2" "fisier3 fisier3 fisier3" "fisier4 fisier4 fisier4" "fisier5 fisier5 fisier5" "fisier6 fisier6 fisier6" "fisier7 fisier7 fisier7" "fisier8 fisier8 fisier8" ". pages .";
+  grid-area: listFisiere;
+}
+
+.pages {
+  display: grid;
+  grid-template-columns: 1.2fr 0.6fr 1.2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . .";
+  grid-area: pages;
+}
+
+.fisier1 { grid-area: fisier1; }
+
+.fisier2 { grid-area: fisier2; }
+
+.fisier3 { grid-area: fisier3; }
+
+.fisier4 { grid-area: fisier4; }
+
+.fisier5 { grid-area: fisier5; }
+
+.fisier6 { grid-area: fisier6; }
+
+.fisier7 { grid-area: fisier7; }
+
+.fisier8 { grid-area: fisier8; }
