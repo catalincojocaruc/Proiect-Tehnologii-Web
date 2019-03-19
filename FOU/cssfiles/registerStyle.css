@@ -1,4 +1,5 @@
-.grid-container {
+.grid-container
+{
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
   grid-template-rows: 0.5fr 2fr 0.5fr;
@@ -23,7 +24,7 @@
 .body
 {
   font-family: Verdana;
-  background-color: black;
+  background-color: #002333;
   height: 50%;
   width: 50%;
   align-content: center;
