@@ -1,117 +1,223 @@
-@font-face { font-family: BAUHS93; src: url('fonts/BAUHS93.ttf'); }
-@font-face { font-family: BAUHS93 Regular; src: url('fonts/Bauhaus 93 Regular.ttf'); }
-
-img
+a
 {
-max-width: 100%;
-max-height: 100%;
+  text-decoration: none
 }
+
+body
+{
+font-family: monospace;
+}
+
 .grid-container {
-  width: 100%;
-  height: 100%;
+  border: none;
   display: grid;
-  grid-template-columns: 0.2fr 1.8fr;
-  grid-template-rows: 0.6fr 2.6fr 0.1fr;
-  grid-template-areas: "header header" "navBar main" "navBar main";
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 2.8fr;
+  grid-template-rows: 0.5fr 0.2fr 2.3fr;
+  grid-template-areas: "LOGO LOGO LOGO LOGO LOGO LOGO" "upload favorites recently my-files tags search" "Main Main Main Main Main Main";
 }
 
-.header {
-  width: 100%;
-  height: 100px;
-  background-color: #002333;
+.LOGO {
+  border : none;
+  text-align: center;
+  background-color: 	#002333;
+  width:100%;
+  height: 250px;
+  grid-area: LOGO; }
+
+.upload {
+  width:100%;
+  background-color: #004666;
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr 1fr;
+  grid-template-columns: 0.5fr 1.5fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "title search user";
-  grid-area: header;
+  grid-template-areas: "logo option";
+  grid-area: upload;
 }
 
-.title {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  grid-area: title; }
+.logo {
 
-.search {
+  height: 70%;
+  text-align: right;
+  grid-area: logo;
   position: relative;
-  top: 30%;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  grid-area: search; }
+  top: 15%;
+  left:90%;
+}
 
-  .search input
-  {
-    border-radius: 10px;
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    font-family: monospace;
+.option {
+  position: relative;
+  bottom: 5%;
+  color:white;
+  text-align: center;
+  grid-area: option; }
+
+.favorites {
+  width:100%;
+  background-color: #006999;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "favlogo favoption";
+   grid-area: favorites; }
+
+   .favlogo {
+
+     height: 70%;
+     text-align: left;
+     grid-area: logo;
+     position: relative;
+     top:15%;
+     right:100%;
+
+   }
+
+   .favoption {
+     position: relative;
+     right: 50%;
+     bottom: 5%;
+     color:white;
+     text-align: center;
+     grid-area: option; }
+
+.recently {
+  width:100%;
+  background-color: #004666;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "reclogo recoption";
+  grid-area: recently; }
+
+
+     .reclogo {
+
+       height: 70%;
+       text-align: left;
+       grid-area: logo;
+       position: relative;
+       top:15%;
+       right:50%;
+
+     }
+
+     .recoption {
+       position: relative;
+       right: 17%;
+       bottom: 5%;
+       color:white;
+       text-align: center;
+       grid-area: option; }
+
+.my-files {
+  width:100%;
+  background-color: #006999;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "mylogo myoption";
+   grid-area: my-files; }
+
+   .mylogo {
+
+     height: 70%;
+     text-align: right;
+     grid-area: logo;
+     position: relative;
+     top: 15%;
+     right: 180%;
+   }
+
+   .myoption {
+     position: relative;
+     right: 70%;
+     bottom: 5%;
+     color:white;
+     text-align: left;
+     grid-area: option; }
+
+.tags {
+  width:100%;
+  background-color: #004666;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "tagslogo tagsoption";
+  grid-area: tags; }
+
+  .tagslogo {
+
+    height: 70%;
+    text-align: right;
+    grid-area: logo;
+    position: relative;
+    top: 15%;
+    right: 320%;;
   }
 
-.user {
-  width: 100%;
-  height: 100%;
+  .tagsoption {
+    position: relative;
+    right: 200%;
+    bottom: 5%;
+    color:white;
+    text-align: center;
+    grid-area: option; }
+
+.search {
+  background-color: #004666;
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 0.5fr 1.5fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "username avatar";
-  grid-area: user;
+  grid-template-areas: "icon searchBar";
+  grid-area: search;
 }
 
-.username {
-  font-size: 120%;
-  color: white;
-  font-family: monospace;
-  position: relative;
-  left: 79%;
-  width: 100%;
-  height: 100%;
-  top:5%;
-  grid-area: username; }
+.searchBar {
+  grid-area: searchBar;
+ }
 
-.avatar {
-  width: 50%;
-  height: 50%;
-  grid-area: avatar;
-position: relative;
-top: 10%;}
+ .searchBar input
+ {
+   left:5%;
+   position: relative;
+   top:18%;
+   width:90%;
+   height: 50%;
+   border-radius: 20px;
+   text-align: center;
+ }
 
-.navBar {
-background-color: #004666;
-height:  400%;
-grid-area: navBar; }
+.icon {
+  background-color: #006999;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "username usericon";
+  grid-area: icon; }
 
-.navBar p
+  .username {
+    position: relative;
+    right: 70%;
+    bottom: 3%;
+    color:white;
+    text-align: center;
+    grid-area: option;
+  }
+
+  .usericon {
+    height: 70%;
+    text-align: right;
+    grid-area: logo;
+    position: relative;
+    top: 15%;
+    right: 180%;
+  }
+
+.imag
 {
-  font-size:140%;
-  font-family: monospace;
-  position: relative;
-  left: 15%;
-  color: white;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-.main {
-  font-family: monospace;
-  background-color: 	#007ab2;
-  width: 100%;
-  height: 400%;
-  grid-area: main; }
 
-.main h1
-{text-align: center;
-  color : black;
-  position: relative;
-  top: 5%;
-  font-family: monospace;
-
-}
-
-.main table
-{
-  font-size: 30px;
-  color:white;
-  position: relative;
-  top: 10%;
-  left: 15%;
-}
+.Main { grid-area: Main; }
