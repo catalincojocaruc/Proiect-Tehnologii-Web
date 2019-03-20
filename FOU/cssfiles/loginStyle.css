@@ -22,8 +22,9 @@
 }
 .body
 {
-  font-family: Verdana;
-  background-color: #002333;
+  font-family: monospace;
+  background: rgb(0,122,178);
+  background: linear-gradient(180deg, rgba(0,122,178,1) 0%, rgba(0,35,51,1) 78%);
   height: 50%;
   width: 50%;
   align-content: center;
@@ -38,8 +39,8 @@
   background-color: white;
   border-radius: 10px;
   border: solid;
-  border-color:white;
-  border-width: 5px;
+  border-color:rgb(0,122,178);
+  border-width: 3px;
   text-align: center;
   color: rgb(0,122,178);
   position: relative;
@@ -56,13 +57,18 @@ button
   border-radius: 8px;
 }
 
+a
+{
+  text-decoration: none;
+}
+
 .login
 {
   grid-area: login;
   border-radius: 10px;
   border: solid;
-  border-color:rgb(0,122,178);
-  border-width: 5px;
+  border-color:white;
+  border-width: 3px;
   background-color: rgb(0,122,178);
   text-align: center;
   width: 100%;
