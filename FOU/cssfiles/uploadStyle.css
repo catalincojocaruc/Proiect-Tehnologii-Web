@@ -2,8 +2,6 @@ h1
 {
   font-family: monospace;
    text-decoration-style: solid;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #0082c8;
 }
 
 a
@@ -243,4 +241,27 @@ padding: 0;
 }
 
 
-.Main { grid-area: Main; }
+.Main {
+  text-align: center;
+  grid-area: Main; }
+
+  .Main button
+  {
+    border-color: black;
+    font-family: monospace;
+    color: white;
+  background-color: #006999;
+    border-radius: 10px;
+    width:15%;
+    height: 10%;
+  }
+
+  .Main textarea
+  {
+    border-width: medium;
+    border-radius: 10px;
+    border-color: black;
+    font-family: monospace;
+    width:30%;
+    height: 20%;
+  }
