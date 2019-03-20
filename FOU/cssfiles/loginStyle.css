@@ -49,7 +49,14 @@
 
 input
 {
-  border-radius: 8px;
+  font-family: monospace;
+  background-color: #006999;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  text-align: center;
 }
 
 button
