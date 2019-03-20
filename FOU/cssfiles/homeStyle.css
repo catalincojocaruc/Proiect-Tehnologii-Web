@@ -2,8 +2,6 @@ h1
 {
   font-family: monospace;
    text-decoration-style: solid;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #0082c8;
 }
 
 a
@@ -35,6 +33,8 @@ padding: 0;
   grid-area: LOGO; }
 
 .upload {
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   width:100%;
   background-color: #004666;
@@ -64,6 +64,8 @@ padding: 0;
   grid-area: option; }
 
 .favorites {
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   width:100%;
   background-color: #006999;
@@ -93,6 +95,8 @@ padding: 0;
      grid-area: option; }
 
 .recently {
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   width:100%;
   background-color: #004666;
@@ -123,6 +127,8 @@ padding: 0;
        grid-area: option; }
 
 .my-files {
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   width:100%;
   background-color: #006999;
@@ -151,6 +157,8 @@ padding: 0;
      grid-area: option; }
 
 .tags {
+  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   width:100%;
   background-color: #004666;
@@ -250,9 +258,14 @@ padding: 0;
     grid-template-areas: ". mainTitle mainTitle mainTitle mainTitle mainTitle ." ". . . . . . ." ". Area1 . Area2 . Area3 ." ". . . . . . ." ". Area4 . Area5 . Area6 ." ". . . . . . ." ". footerText footerText footerText footerText footerText .";
   }
 
-  .footerText { grid-area: footerText; }
+  .footerText {
+    text-align: center;
+    grid-area: footerText; }
 
 .Area1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-width: 3px;
   border-color: white;
   border-radius: 10px;
@@ -265,10 +278,13 @@ padding: 0;
 }
 
 .Area2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-width: 3px;
   border-color: white;
   border-radius: 10px;
-   background-color: #006999;
+  background-color: #006999;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.3fr 0.7fr;
@@ -276,6 +292,9 @@ padding: 0;
   grid-area: Area2; }
 
 .Area3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-width: 3px;
   border-color: white;
   border-radius: 10px;
@@ -287,10 +306,13 @@ padding: 0;
   grid-area: Area3; }
 
 .Area4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-width: 3px;
   border-color: white;
   border-radius: 10px;
-   background-color: #006999;
+  background-color: #006999;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.3fr 0.7fr;
@@ -298,30 +320,44 @@ padding: 0;
   grid-area: Area4; }
 
 .Area5 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-width: 3px;
   border-color: white;
   border-radius: 10px;
   background-color: #004666;
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.3fr 0.7fr;
   grid-template-areas: "areaIcon" "areaText";
   grid-area: Area5; }
 
 .Area6 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   border-width: 3px;
   border-color: white;
   border-radius: 10px;
-   background-color: #006999;
+  background-color: #006999;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.3fr 0.7fr;
   grid-template-areas: "areaIcon" "areaText";
   grid-area: Area6; }
 
-  .areaIcon { grid-area: areaIcon; }
+  .areaIcon {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    height: 70%;
+    grid-area: areaIcon; }
 
-  .areaText { grid-area: areaText; }
+  .areaText {
+    color: white;
+    text-align: center;
+    grid-area: areaText; }
 
 .mainTitle {
   text-align: center;
