@@ -240,4 +240,13 @@ padding: 0;
 }
 
 
-.Main { grid-area: Main; }
+.Main {
+  text-align: center;
+  grid-area: Main; }
+
+.Main table
+{
+  font-family: monospace;
+  color:white;
+  text-align: left;
+}
