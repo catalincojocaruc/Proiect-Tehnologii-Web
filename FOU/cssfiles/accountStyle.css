@@ -210,7 +210,7 @@ padding: 0;
  }
 
 .icon {
-  background-color: #006999;
+  background-color: #002333;
   display: grid;
   grid-template-columns: 0.5fr 1.5fr;
   grid-template-rows: 1fr;
@@ -243,86 +243,4 @@ padding: 0;
 }
 
 
-.Main { grid-area: Main;
-    display: grid;
-    grid-template-columns: 0.6fr 2.5fr 0.1fr 2.5fr 0.1fr 2.5fr 0.6fr;
-    grid-template-rows: 1.2fr 0.1fr 3.5fr 0.3fr 3.5fr 0.4fr 1.5fr;
-    grid-template-areas: ". mainTitle mainTitle mainTitle mainTitle mainTitle ." ". . . . . . ." ". Area1 . Area2 . Area3 ." ". . . . . . ." ". Area4 . Area5 . Area6 ." ". . . . . . ." ". footerText footerText footerText footerText footerText .";
-  }
-
-  .footerText { grid-area: footerText; }
-
-.Area1 {
-  border-width: 3px;
-  border-color: white;
-  border-radius: 10px;
-  background-color: #004666;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
-  grid-template-areas: "areaIcon" "areaText";
-  grid-area: Area1;
-}
-
-.Area2 {
-  border-width: 3px;
-  border-color: white;
-  border-radius: 10px;
-   background-color: #006999;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
-  grid-template-areas: "areaIcon" "areaText";
-  grid-area: Area2; }
-
-.Area3 {
-  border-width: 3px;
-  border-color: white;
-  border-radius: 10px;
-  background-color: #004666;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
-  grid-template-areas: "areaIcon" "areaText";
-  grid-area: Area3; }
-
-.Area4 {
-  border-width: 3px;
-  border-color: white;
-  border-radius: 10px;
-   background-color: #006999;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
-  grid-template-areas: "areaIcon" "areaText";
-  grid-area: Area4; }
-
-.Area5 {
-  border-width: 3px;
-  border-color: white;
-  border-radius: 10px;
-  background-color: #004666;
-   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
-  grid-template-areas: "areaIcon" "areaText";
-  grid-area: Area5; }
-
-.Area6 {
-  border-width: 3px;
-  border-color: white;
-  border-radius: 10px;
-   background-color: #006999;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.3fr 0.7fr;
-  grid-template-areas: "areaIcon" "areaText";
-  grid-area: Area6; }
-
-  .areaIcon { grid-area: areaIcon; }
-
-  .areaText { grid-area: areaText; }
-
-.mainTitle {
-  text-align: center;
-   grid-area: mainTitle; }
+.Main { grid-area: Main; }
