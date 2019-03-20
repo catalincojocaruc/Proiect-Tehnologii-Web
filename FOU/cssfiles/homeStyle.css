@@ -1,3 +1,11 @@
+h1
+{
+  font-family: monospace;
+   text-decoration-style: solid;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #0082c8;
+}
+
 a
 {
   text-decoration: none
@@ -6,10 +14,12 @@ a
 body
 {
 font-family: monospace;
+margin: 0;
+padding: 0;
 }
 
 .grid-container {
-  border: none;
+  font-family: monospace;
   display: grid;
   grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 2.8fr;
   grid-template-rows: 0.5fr 0.2fr 2.3fr;
@@ -17,7 +27,6 @@ font-family: monospace;
 }
 
 .LOGO {
-  border : none;
   text-align: center;
   background-color: 	#002333;
   width:100%;
@@ -25,6 +34,7 @@ font-family: monospace;
   grid-area: LOGO; }
 
 .upload {
+  height: 100%;
   width:100%;
   background-color: #004666;
   display: grid;
@@ -32,6 +42,7 @@ font-family: monospace;
   grid-template-rows: 1fr;
   grid-template-areas: "logo option";
   grid-area: upload;
+  padding-bottom: 1px;
 }
 
 .logo {
@@ -41,7 +52,7 @@ font-family: monospace;
   grid-area: logo;
   position: relative;
   top: 15%;
-  left:90%;
+  left: 50%;
 }
 
 .option {
@@ -52,6 +63,7 @@ font-family: monospace;
   grid-area: option; }
 
 .favorites {
+  height: 100%;
   width:100%;
   background-color: #006999;
   display: grid;
@@ -67,19 +79,20 @@ font-family: monospace;
      grid-area: logo;
      position: relative;
      top:15%;
-     right:100%;
+     right:60%;
 
    }
 
    .favoption {
      position: relative;
-     right: 50%;
      bottom: 5%;
+     right: 10%;
      color:white;
      text-align: center;
      grid-area: option; }
 
 .recently {
+  height: 100%;
   width:100%;
   background-color: #004666;
   display: grid;
@@ -96,19 +109,20 @@ font-family: monospace;
        grid-area: logo;
        position: relative;
        top:15%;
-       right:50%;
+       right:80%
 
      }
 
      .recoption {
        position: relative;
-       right: 17%;
+       right: 30%;
        bottom: 5%;
        color:white;
        text-align: center;
        grid-area: option; }
 
 .my-files {
+  height: 100%;
   width:100%;
   background-color: #006999;
   display: grid;
@@ -124,18 +138,19 @@ font-family: monospace;
      grid-area: logo;
      position: relative;
      top: 15%;
-     right: 180%;
+     right: 140%;
    }
 
    .myoption {
      position: relative;
-     right: 70%;
+     right: 30%;
      bottom: 5%;
      color:white;
      text-align: left;
      grid-area: option; }
 
 .tags {
+  height: 100%;
   width:100%;
   background-color: #004666;
   display: grid;
@@ -151,12 +166,12 @@ font-family: monospace;
     grid-area: logo;
     position: relative;
     top: 15%;
-    right: 320%;;
+    right: 280%;;
   }
 
   .tagsoption {
     position: relative;
-    right: 200%;
+    right: 150%;
     bottom: 5%;
     color:white;
     text-align: center;
@@ -177,9 +192,16 @@ font-family: monospace;
 
  .searchBar input
  {
+
+   font-family: monospace;
+   background-color: #006999;
+   color: white;
+   border-width: 3px;
+   border-style: solid;
+   border-color: white;
    left:5%;
    position: relative;
-   top:18%;
+   top:17%;
    width:90%;
    height: 50%;
    border-radius: 20px;
@@ -196,7 +218,7 @@ font-family: monospace;
 
   .username {
     position: relative;
-    right: 70%;
+    right: 30%;
     bottom: 3%;
     color:white;
     text-align: center;
@@ -209,7 +231,7 @@ font-family: monospace;
     grid-area: logo;
     position: relative;
     top: 15%;
-    right: 180%;
+    right: 140%;
   }
 
 .imag
