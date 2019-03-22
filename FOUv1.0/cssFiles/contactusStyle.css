@@ -312,3 +312,14 @@ button
   color: white;
   font-size: 30px;
 }
+
+.main textarea
+{
+  font-size: 30px;
+  border-width: medium;
+  border-radius: 10px;
+  border-color: black;
+  font-family: monospace;
+  width:30%;
+  height: 20%;
+}
