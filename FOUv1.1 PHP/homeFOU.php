@@ -34,7 +34,7 @@
               </a>
           </div>
           <div class="column">
-              <a href="favorites.html">
+              <a href="favorites.php">
             <div class="navItem2">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -48,7 +48,7 @@
             </a>
           </div>
           <div class="column">
-              <a href="recent.html">
+              <a href="recent.php">
             <div class="navItem1">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -62,7 +62,7 @@
             </a>
           </div>
           <div class="column">
-              <a href="files.html">
+              <a href="files.php">
             <div class="navItem2">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -76,7 +76,7 @@
             </a>
           </div>
           <div class="column">
-              <a href="tags.html">
+              <a href="tags.php">
             <div class="navItem1">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -105,7 +105,11 @@
           </div>
           <div class="column">
             <div class="navSearchBar">
+                <div class="frm">
+              <form action="search.php" method="GET">
                 <input type="text" name="searchBar" value="Search your files..">
+              </div>
+              </form>
             </div>
           </div>
         </div>
