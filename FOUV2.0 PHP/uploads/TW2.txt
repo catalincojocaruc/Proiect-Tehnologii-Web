@@ -1,0 +1,51 @@
+Implementa?i un serviciu web folosind paradigma REST care sa modeleze o colec?ie de becuri inteligente.
+
+Serviciul trebuie sa ofere posibilitatea utilizatorului sa:
+
+vizualizeze informa?iile despre toate entita?ile sau despre una specifica
+adauge o entitate noua
+(op?ional) ?tearga o entitate existenta
+(op?ional) actualizeze informa?iile despre o entitate exitenta.
+Suplimentar se poate adauga un client care sa demonstreze func?ionalita?ile implementate în serviciul web.
+
+
+/**
+ * Exercitiul nr. 1
+ */
+
+[5p] Creati un API HTTP (JSON-RPC) care sa furnizeze glume despre Chuck Norris. API-ul va raspunde la cereri GET. Numarul de glume oferite va fi parametrizabil. La fiecare cerere va fi furnizata o gluma aleatoare. Tipul continutului raspunsului va fi JSON. Glumele vor fi preluate dintr-o baza de date ce va fi creata manual.
+
+http://www.icndb.com/the-jokes-2/
+
+
+
+/**
+ * Exercitiul nr. 2
+ */
+
+[5p] Creati un API HTTP (JSON-RPC) care sa furnizeze link-uri la imagini cu catei. API-ul va raspunde la cereri GET. Numarul de imagini oferite va fi parametrizabil. La fiecare cerere va fi furnizata o imagine aleatoare. Tipul continutului raspunsului va fi JSON. Link-urile vor fi preluate dintr-o baza de date ce va fi creata manual.
+
+Raspunsurile vor fi furnizate prin intermediul urmatorului formular: https://docs.google.com/forms/d/e/1FAIpQLSdfUkNycj_cA7w88OxkMpPn0yDv6PiJ6kFuW_-wmUNFq-qecg/viewform
+
+
+/**
+ * Exercitiul nr. 1
+ */
+
+[5p] Creati un API HTTP (JSON-RPC) care sa furnizeze informatii despre sarbatorile nationale ale unei tari, dintr-o anumita luna calendaristica. API-ul va raspunde la cereri GET. Tara si luna calendaristica vor fi specificate ca parametri. Tipul continutului raspunsului va fi JSON. Informatiile vor fi preluate dintr-o baza de date ce va fi creata manual.
+
+https://ro.wikipedia.org/wiki/S%C4%83rb%C4%83tori_publice_%C3%AEn_Rom%C3%A2nia
+
+https://www.officeholidays.com/countries/austria/index.php
+
+
+
+/**
+ * Exercitiul nr. 2
+ */
+
+[5p] Creati un API HTTP (JSON-RPC) care ofera functionalitatea de conversie valutara. API-ul va raspunde la cereri GET. Cele doua valute si valoarea vor fi parametrizabile. Tipul continutului raspunsului va fi JSON. Ratele de schimb vor fi stocate intr-o baza de date ce va fi creata manual, iar calculele se vor face pe baza acestor informatii. 
+
+
+
+
