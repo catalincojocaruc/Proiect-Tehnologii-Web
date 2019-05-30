@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="cssFiles/homeStyle.css">
+    <link rel="stylesheet" href="cssFiles/accountdetailsStyle.css">
     <link rel="icon" href="media/favico.ico" type="image/x-icon">
     <title>File Online Uploader</title>
   </head>
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="column">
               <div class="header">
-                  <a href="homeFOU.php">
+                  <a href="homeFOU.html">
                 <img src="media/titlu-logo.png">
                 </a>
               </div>
@@ -34,7 +34,7 @@
               </a>
           </div>
           <div class="column">
-              <a href="favorites.php">
+              <a href="favorites.html">
             <div class="navItem2">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -48,7 +48,7 @@
             </a>
           </div>
           <div class="column">
-              <a href="recent.php">
+              <a href="recent.html">
             <div class="navItem1">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -62,7 +62,7 @@
             </a>
           </div>
           <div class="column">
-              <a href="files.php">
+              <a href="files.html">
             <div class="navItem2">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -76,7 +76,7 @@
             </a>
           </div>
           <div class="column">
-              <a href="tags.php">
+              <a href="tags.html">
             <div class="navItem1">
               <div class="navItemRow">
               <div class="navItemColumn1">
@@ -90,8 +90,8 @@
             </a>
           </div>
           <div class="column">
-              <a href="account.php">
-            <div class="navItem2">
+              <a href="account.html">
+            <div class="navItemCurrent">
               <div class="navItemRow">
               <div class="navItemColumn1">
               <img src="media/avatar.png" width="75" height="75">
@@ -105,67 +105,19 @@
           </div>
           <div class="column">
             <div class="navSearchBar">
-                <div class="frm">
-              <form action="search.php" method="GET">
                 <input type="text" name="searchBar" value="Search your files..">
-              </div>
-              </form>
             </div>
           </div>
         </div>
 
-        <div class="row">
-            <div class="column">
-                <div class="main">
-                  <?php
-                      session_start();
+        <div class="row" align="center">
+          <div class="column">
+              <div class="main">
+                  <div class="column2" align="center">
+                    <h1>Account Details</h1>
 
-                      if(isset($_SESSION['User']))
-                      {
-                          echo '<br><h1> Welcome back, ' . $_SESSION['User'].' !<br/><h1>';
-                          //echo '<a href="logout.php?logout">Logout</a>';
-                      }
-                      else
-                      {
-                          header("location:index.php");
-                      }
-
-                  ?>
-                <h1> File Online Uploader! - Your online data saver </h1>
-                    <div class="mainRow" align="center">
-                        <div class="mainColumn1">
-                          <img src="media/fast.png" width="150" height="150">
-                          <h1>Fast upload</h1>
-                        </div>
-                        <div class="mainColumn2">
-                          <img src="media/support.png" width="150" height="150">
-                          <h1>24H Customer support</h1>
-                        </div>
-                        <div class="mainColumn1">
-                          <img src="media/tags-logo.png" width="150" height="150">
-                          <h1>Tag your files</h1>
-                        </div>
-                      </div>
-                      <div class="mainRow" align="center">
-                          <div class="mainColumn2">
-                            <img src="media/private.png" width="150" height="150">
-                            <h1>Privacy of your files</h1>
-                          </div>
-                          <div class="mainColumn1">
-                            <img src="media/free.png" width="150" height="150">
-                            <h1>100% Free</h1>
-                          </div>
-                          <div class="mainColumn2">
-                            <img src="media/storage.png" width="150" height="150">
-                            <h1>Big storage for your data</h1>
-                          </div>
-                        </div>
-                        <h1>Thank you for choosing FOU!</h1>
-                        <h1>CONTACT US</h1
-                </div>
-            </div>
-          </div>
-
+                  </div>
+</div></div>
     </div>
   </body>
 </html>

@@ -1,9 +1,13 @@
+<?php
+session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="cssFiles/homeStyle.css">
+    <link rel="stylesheet" href="cssFiles/filesStyle.css">
     <link rel="icon" href="media/favico.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Online Uploader</title>
   </head>
   <body>
@@ -63,7 +67,7 @@
           </div>
           <div class="column">
               <a href="files.php">
-            <div class="navItem2">
+            <div class="navItemCurrent">
               <div class="navItemRow">
               <div class="navItemColumn1">
               <img src="media/my-logo.png" width="75" height="75">
@@ -105,10 +109,8 @@
           </div>
           <div class="column">
             <div class="navSearchBar">
-                <div class="frm">
               <form action="search.php" method="GET">
                 <input type="text" name="searchBar" value="Search your files..">
-              </div>
               </form>
             </div>
           </div>
@@ -117,51 +119,52 @@
         <div class="row">
             <div class="column">
                 <div class="main">
-                  <?php
-                      session_start();
 
-                      if(isset($_SESSION['User']))
-                      {
-                          echo '<br><h1> Welcome back, ' . $_SESSION['User'].' !<br/><h1>';
-                          //echo '<a href="logout.php?logout">Logout</a>';
-                      }
-                      else
-                      {
-                          header("location:index.php");
-                      }
+<?php
 
-                  ?>
-                <h1> File Online Uploader! - Your online data saver </h1>
-                    <div class="mainRow" align="center">
-                        <div class="mainColumn1">
-                          <img src="media/fast.png" width="150" height="150">
-                          <h1>Fast upload</h1>
-                        </div>
-                        <div class="mainColumn2">
-                          <img src="media/support.png" width="150" height="150">
-                          <h1>24H Customer support</h1>
-                        </div>
-                        <div class="mainColumn1">
-                          <img src="media/tags-logo.png" width="150" height="150">
-                          <h1>Tag your files</h1>
-                        </div>
-                      </div>
-                      <div class="mainRow" align="center">
-                          <div class="mainColumn2">
-                            <img src="media/private.png" width="150" height="150">
-                            <h1>Privacy of your files</h1>
-                          </div>
-                          <div class="mainColumn1">
-                            <img src="media/free.png" width="150" height="150">
-                            <h1>100% Free</h1>
-                          </div>
-                          <div class="mainColumn2">
-                            <img src="media/storage.png" width="150" height="150">
-                            <h1>Big storage for your data</h1>
-                          </div>
-                        </div>
-                        <h1>Thank you for choosing FOU!</h1>
-                        <h1>CONTACT US</h1
+$id=$_GET['id'];
+if(isset($_SESSION['User']))
+{
+
+    $usr = $_SESSION['User'];
+    $db = mysqli_connect('localhost', 'root', '', 'fou');
+
+    $user_check_query = "SELECT * FROM fisiere WHERE id=$id";
+    $result = mysqli_query($db, $user_check_query);
+    $user = mysqli_fetch_assoc($result);
+    if ($user['favorit']==0)
+{
+
+    $sql = "UPDATE fisiere SET favorit='1' WHERE id=$id";
+
+if ($db->query($sql) === TRUE) {
+    echo "Record updated successfully";
+        header("location:files.php");
+} else
+{
+    echo "Error deleting record: " . $db->error;
+}
+}
+
+else {
+  $sql = "UPDATE fisiere SET favorit='0' WHERE id=$id";
+
+if ($db->query($sql) === TRUE) {
+  echo "Record updated successfully";
+  header("location:files.php");
+} else
+{
+  echo "Error deleting record: " . $db->error;
+}
+}
+}
+else
+{
+    header("location:index.php");
+}
+
+?>
+
                 </div>
             </div>
           </div>
